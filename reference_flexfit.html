@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexFit Studio - Member Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reference_flexfit_style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="logo">FlexFit</div>
+            <nav>
+                <a href="#" class="active">Schedule</a>
+                <a href="#">Instructors</a>
+                <a href="#">Account</a>
+            </nav>
+        </aside>
+
+        <header class="header">
+            <h1>Welcome back, Ada</h1>
+        </header>
+
+        <main class="main-content">
+
+            <section class="classes-section">
+                <h2>Recommended For You</h2>
+                <div class="class-grid">
+
+                    <div class="class-card popular">
+                        <img src="https://placehold.co/300x180" alt="Sunrise Yoga class">
+                        <div class="class-info">
+                            <h3>Sunrise Yoga</h3>
+                            <p>Gentle flow to start the day, all levels welcome.</p>
+                            <div class="class-meta">
+                                <span>6:30 AM</span>
+                                <span>45 min</span>
+                            </div>
+                            <button class="cta-button">Book Class</button>
+                        </div>
+                    </div>
+
+                    <div class="class-card">
+                        <img src="https://placehold.co/300x180" alt="HIIT Circuit class">
+                        <div class="class-info">
+                            <h3>HIIT Circuit</h3>
+                            <p>High-intensity intervals, 30 seconds on, 30 off.</p>
+                            <div class="class-meta">
+                                <span>12:00 PM</span>
+                                <span>30 min</span>
+                            </div>
+                            <button class="cta-button">Book Class</button>
+                        </div>
+                    </div>
+
+                    <div class="class-card">
+                        <img src="https://placehold.co/300x180" alt="Strength Fundamentals class">
+                        <div class="class-info">
+                            <h3>Strength Fundamentals</h3>
+                            <p>Barbell basics - squat, press, deadlift, taught slowly.</p>
+                            <div class="class-meta">
+                                <span>5:00 PM</span>
+                                <span>60 min</span>
+                            </div>
+                            <button class="cta-button">Book Class</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="week-section">
+                <h2>This Week</h2>
+                <div class="week-row">
+                    <div class="week-card"><p class="week-day">Mon</p><p class="week-class">Yoga</p></div>
+                    <div class="week-card"><p class="week-day">Tue</p><p class="week-class">HIIT</p></div>
+                    <div class="week-card"><p class="week-day">Wed</p><p class="week-class">Strength</p></div>
+                    <div class="week-card"><p class="week-day">Thu</p><p class="week-class">Pilates</p></div>
+                    <div class="week-card"><p class="week-day">Fri</p><p class="week-class">Spin</p></div>
+                    <div class="week-card"><p class="week-day">Sat</p><p class="week-class">Yoga</p></div>
+                </div>
+            </section>
+
+            <section class="booking-section">
+                <h2>Book a Session</h2>
+
+                <p class="section-label">Choose an instructor</p>
+                <div class="instructor-picker">
+                    <input type="radio" name="instructor" id="instructor-1" checked>
+                    <label for="instructor-1" class="instructor-swatch">
+                        <img src="https://placehold.co/60x60" alt="Instructor Dara">
+                        <span>Dara</span>
+                    </label>
+
+                    <input type="radio" name="instructor" id="instructor-2">
+                    <label for="instructor-2" class="instructor-swatch">
+                        <img src="https://placehold.co/60x60" alt="Instructor Kemi">
+                        <span>Kemi</span>
+                    </label>
+
+                    <input type="radio" name="instructor" id="instructor-3">
+                    <label for="instructor-3" class="instructor-swatch">
+                        <img src="https://placehold.co/60x60" alt="Instructor Femi">
+                        <span>Femi</span>
+                    </label>
+                </div>
+
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Ada Lovelace" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Notes (optional)</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Anything we should know before your session?"></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button">Confirm Booking</button>
+                </form>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
