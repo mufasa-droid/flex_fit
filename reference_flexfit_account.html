@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexFit Studio - My Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="logo">FlexFit</div>
+            <nav>
+                <a href="index.html">Schedule</a>
+                <a href="reference_flexfit_instructors.html">Instructors</a>
+                <a href="reference_flexfit_account.html" class="active">Account</a>
+            </nav>
+        </aside>
+
+        <header class="header">
+            <h1>My Account</h1>
+        </header>
+
+        <main class="main-content">
+
+            <section class="profile-summary">
+                <img src="profile.jpg" alt="Ada Lovelace" class="profile-avatar">
+                <div class="profile-summary-text">
+                    <h2 class="profile-name">Ada Lovelace</h2>
+                    <p class="member-since">Member since March 2024</p>
+                </div>
+                <span class="plan-badge">Traveler Plan</span>
+            </section>
+
+            <div class="account-grid">
+
+                <section class="membership-card">
+                    <h2>Membership</h2>
+                    <p class="membership-plan">Traveler Plan</p>
+                    <p class="membership-detail">Unlimited classes &middot; Renews Sep 1, 2026</p>
+                    <button class="cta-button">Manage Plan</button>
+                </section>
+
+                <section class="details-form-card">
+                    <h2>Account Details</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Ada Lovelace" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acc-email">Email</label>
+                            <input type="email" id="acc-email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+
+                        <button type="submit" class="cta-button">Save Changes</button>
+                    </form>
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

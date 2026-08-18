@@ -306,3 +306,164 @@ input::placeholder, textarea::placeholder {
         justify-content: space-around;
     }
 }
+
+/* ================================================================
+   INSTRUCTORS PAGE
+   ================================================================ */
+
+.section-intro {
+    max-width: 65ch;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.instructor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+}
+
+.instructor-card {
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.instructor-card:hover {
+    transform: translateY(-5px);
+}
+
+.instructor-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.instructor-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.instructor-info h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.05rem;
+}
+
+.specialty {
+    color: var(--accent-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin: 0 0 0.6rem 0;
+}
+
+.instructor-info .bio {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0 0 1rem 0;
+    flex-grow: 1;
+}
+
+.instructor-info .cta-button {
+    margin-top: auto;
+}
+
+.instructor-card.lead::before {
+    content: "Head Coach";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+/* ================================================================
+   ACCOUNT PAGE
+   ================================================================ */
+
+.profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-summary-text {
+    flex-grow: 1;
+}
+
+.profile-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    margin: 0 0 0.25rem 0;
+}
+
+.member-since {
+    color: #888;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.plan-badge {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.membership-card, .details-form-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.membership-card h2, .details-form-card h2 {
+    margin-top: 0;
+}
+
+.membership-plan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.25rem 0;
+}
+
+.membership-detail {
+    color: #777;
+    font-size: 0.88rem;
+    margin: 0 0 1.25rem 0;
+}
